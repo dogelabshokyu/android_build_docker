@@ -11,7 +11,7 @@ $ docker build --build-arg userid=$(id -u) --build-arg groupid=$(id -g) --build-
 
 Then you can start up new instances with:
 ```
-$ docker run -it --rm -v $(pwd):/src android-build-trusty-7
+$ docker run -it --rm -v $(pwd):/src android-build-trusty-openjdk-7
 > cd /src; source build/envsetup.sh
 > lunch aosp_arm-eng
 > m -j50 
